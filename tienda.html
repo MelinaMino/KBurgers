@@ -1,0 +1,71 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <link href="../Iconos/fontawesome-free-5.15.4-web/css/all.css">
+    <title>K Burgers</title>
+</head>
+
+<body>
+    <header>
+        <div class="contenedorlogo">
+            <a href="./index.html"><img src="./Imgs/logok burgers.png" alt="Logo K burgers" class="navlogo"></a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="listanav" id="listanav">
+                <li class="navitem"><a href="./index.html" class="navlink">Inicio</a></li>
+                <li class="navitem"><a href="./tienda.html" class="navlink">Pedido Online</a></li>
+                <li class="navitem"><a href="#Contacto" class="navlink">Contacto </a></li>
+                <li class="navitem"><a href="./login.html" class="navlink">Acceso Clientes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="description">
+        <h3>Nuestra Carta</h3>
+        <p>En esta seccion podes ver todas nuestras hamburguesas</p>
+    </section>
+    <section class="Tienda" id="Tienda">
+        <h4>Salen acompañadas de papas fritas</h4>
+        <div class="principalList">
+            <div id="list-products"></div>
+        </div>
+    </section>
+    <section class="cartList" id="cartList">
+        <div class="principalList">
+            <h3>Tu pedido:</h3>
+            <div class="cart-wrapper" id="cartWrapper">
+                <div class="emptyProductsMessage">No tienes productos seleccionados</div>
+            </div>
+            <div class="total-items">
+                <span>
+                    <strong>Total:</strong>
+                    <span id="totalProducts"></span>$
+                </span>
+            </div>
+            <button id="finish">Finalizar compra</button>
+        </div>
+    </section>
+
+    <footer>
+        <p class="Copy">© Copyright KBurgers. Todos los derechos reservados. </p>
+        <div class="redes-soc">
+            <a href=><i class="fab fa-facebook icon-redes"></i> </a>
+            <a href=><i class="fab fa-twitter icon-redes"></i></a>
+            <a href=><i class="fab fa-instagram icon-redes"></i> </a>
+            <a href=><i class="fab fa-youtube icon-redes"></i></a>
+        </div>
+    </footer>
+
+    <script src="./index.js"></script>
+    <script src="./DOM.js"></script>
+</body>
+
+</html>

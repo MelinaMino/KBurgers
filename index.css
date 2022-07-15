@@ -1,0 +1,520 @@
+@font-face {
+    font-family: 'Oxygen';
+    src: url(./Fuentes/Oxygen-Regular.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #040404;
+    font-family: "Oxygen";
+    font-weight: 200;
+    overflow-x: none;
+}
+
+
+/* HEADER */
+
+header {
+    height: 15%;
+    width: 100%;
+    background-color: #3c3c3c;
+    border-bottom: 1px solid #040404;
+    display: flex;
+}
+
+.contenedorlogo {
+    height: 100%;
+    width: 30%;
+}
+
+.navlogo {
+    width: 100;
+    object-fit: cover;
+}
+
+.navbar {
+    height: 90%;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 1.5rem;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #d0d0d0;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    position: right;
+    width: 25px;
+    height: 3px;
+    margin: 5px;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
+}
+
+.listanav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navitem {
+    margin-left: 5rem;
+}
+
+.navlink {
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #f0f0f0;
+}
+
+.navlink:hover {
+    color: rgba(255, 166, 0, 0.758);
+}
+
+
+/* SECCION INICIO */
+
+#inicio {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.KBurgers {
+    height: 100%;
+    width: 100%;
+    color: #040404;
+    text-align: center;
+    justify-items: center;
+    background-image: url(./Imgs/3FriedOnion.JPG);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+h1 {
+    font-size: 9rem;
+    margin: 2px;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 2px;
+}
+
+
+/* SECCION PEDIDO */
+
+.Pedido {
+    height: 50%;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+    padding: 30px;
+}
+
+.Productos {
+    border: solid 5px rgba(255, 166, 0, 0.758);
+    width: 100%;
+    height: 100%;
+    color: #f3f3f3;
+    text-align: center;
+}
+
+.Productos p {
+    padding: 8px;
+    font-size: 1.2rem;
+}
+
+.productButton {
+    width: 40%;
+    height: 20%;
+    background-color: rgba(255, 166, 0, 0.758);
+    color: #040404;
+    font-weight: 600;
+    font-size: 1.1rem;
+    border-radius: 20px;
+}
+
+.productButton:hover {
+    background-color: #3c3c3c
+}
+
+.Contacto {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.comocomprar,
+.escribinos {
+    margin: px;
+    text-align: center;
+    font-size: 2rem;
+    color: #f3f3f3;
+    background-color: rgba(255, 166, 0, 0.758);
+}
+
+.container-form {
+    background-color: #f0f0f0;
+    height: 100%;
+    width: 50%;
+    border: 5px solid rgba(255, 166, 0, 0.758);
+    box-shadow: grey 20px;
+    text-align: center;
+    margin: 2rem auto 5rem;
+}
+
+.webform {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+label {
+    display: block;
+}
+
+.webform input {
+    width: 80%;
+    height: 8%;
+    padding: 10px 0 10px;
+    margin: 8px;
+    border: 2px solid #040404;
+}
+
+textarea {
+    width: 80%;
+    height: 20%;
+    padding: 10px 0 10px;
+    margin: 8px;
+    border: 2px solid #040404;
+}
+
+#FormSubmit {
+    background-color: rgba(255, 166, 0, 0.758);
+    color: #040404;
+    font-weight: 700;
+    font-size: 1rem;
+    border-radius: 10px;
+}
+
+#FormSubmit:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #f3f3f3;
+}
+
+.copy {
+    font-size: 0.8rem;
+    text-align: center;
+}
+
+.redes-soc {
+    font-size: 28px;
+    text-decoration: none;
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icon-redes {
+    font-weight: bold;
+    font-size: 2rem;
+    margin: 8px;
+}
+
+
+/* Inicio de Sesion, es una pag aparte  */
+
+.login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+.contenedor-login {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.inicio-sesion,
+.login-opciones {
+    width: 30%;
+    height: 50%;
+    background-color: #f3f3f3;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.registrate {
+    color: #040404;
+}
+
+.login-opciones {
+    background-color: #d0d0d0;
+}
+
+.h3login {
+    font-size: 1.5rem;
+}
+
+.inicio-sesion input {
+    width: 80%;
+    height: 12%;
+    padding: 10px 0 10px;
+    margin: 8px;
+    border: 2px solid #040404;
+    border-radius: 10px;
+}
+
+#ingresar {
+    width: 40%;
+    height: 15%;
+    border-radius: 15px;
+    background-color: rgba(255, 166, 0, 0.758);
+    color: #040404;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+#ingresar:hover,
+#btn-facebook:hover,
+#btn-google:hover {
+    background-color: grey;
+}
+
+#btn-facebook,
+#btn-google {
+    background-color: rgba(255, 166, 0, 0.758);
+    color: #040404;
+    width: 80%;
+    height: 15%;
+    padding: 10px;
+    margin: 10px;
+    border: 2px solid #040404;
+    border-radius: 10px;
+    font-size: 1.09rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+#btn-google {
+    background-color: #f3f3f3;
+    color: #040404;
+}
+
+
+/* Registro, es una pagina aparte */
+
+.registro {
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+}
+
+.h3registro {
+    text-align: center;
+    font-size: 2rem;
+    color: #f3f3f3;
+    background-color: #386FA4;
+}
+
+.conteiner-registro {
+    background-color: #386FA4;
+    height: 90%;
+    width: 60%;
+    border: 5px solid #040404;
+    text-align: center;
+    margin: 0 auto 5rem;
+}
+
+.form-registro {
+    font-size: 1.1rem;
+    padding: 5px;
+}
+
+.form-registro input {
+    width: 80%;
+    height: 8%;
+    padding: 10px 0 10px;
+    margin: 8px;
+    border: 2px solid #040404;
+}
+
+#enviar {
+    background-color: #040404;
+    color: #f3f3f3;
+    border-radius: 10px;
+}
+
+#enviar:hover {
+    background-color: grey;
+    cursor: pointer;
+}
+
+
+/* Tienda Online, es una web aparte  */
+
+.description {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    color: #f3f3f3;
+    padding: 2rem;
+}
+
+.description h3 {
+    font-size: 3rem;
+    margin: 2px;
+    background-color: rgba(255, 166, 0, 0.758);
+}
+
+.Tienda {
+    width: 90%;
+    color: #f3f3f3;
+    border: solid rgba(255, 166, 0, 0.758) 3px;
+    border-radius: 10px;
+    justify-content: center;
+    text-align: center;
+    margin: 15px;
+}
+
+.principalList {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+#list-products {
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-auto-rows: 300px;
+    grid-gap: 20px;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 3px;
+    box-shadow: 0 40px 60px -6px black;
+    align-items: center;
+}
+
+#list-products div {
+    border: solid 2px rgba(255, 166, 0, 0.758);
+    border-radius: 8px;
+    text-align: center;
+    justify-content: center;
+    object-fit: cover;
+    margin: 5px;
+}
+
+#list-products div img {
+    height: 70%;
+    width: 80%;
+    object-fit: cover;
+}
+
+
+/* ANIMACIONES  */
+
+h2 {
+    background-color: #040404;
+    color: #d0d0d0;
+    overflow: hidden;
+    border-right: .15em solid rgba(255, 166, 0, 0.758);
+    white-space: nowrap;
+    animation: typing 6s steps(40, end) forwards, blink .8s infinite;
+    width: 0;
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
+}
+
+@keyframes blink {
+    from {
+        border-color: transparent
+    }
+    to {
+        border-color: rgba(255, 166, 0, 0.758);
+    }
+}
+
+
+/* MEDIA QUERYS */
+
+@media only screen and (max-width:768px) {
+    .navbar {
+        margin: 15px;
+        height: 15%;
+    }
+    .listanav {
+        position: fixed;
+        right: -100%;
+        flex-direction: column;
+        background-color: #3c3c3c;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+    }
+    .listanav.active {
+        right: 0;
+        cursor: pointer;
+    }
+    .navitem {
+        margin: 2.5rem 0;
+    }
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+    .hamburger.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .hamburger.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45deg);
+    }
+    .hamburger.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
+}
