@@ -18,7 +18,7 @@
             <ul class="listanav" id="listanav">
                 <li class="navitem"><a href="./index.html" class="navlink">Inicio</a></li>
                 <li class="navitem"><a href="./tienda.html" class="navlink">Pedido Online</a></li>
-                <li class="navitem"><a href="#Contacto" class="navlink">Contacto </a></li>
+                <li class="navitem"><a href="#Tuhamburguesa" class="navlink">Tu hamburguesa </a></li>
                 <li class="navitem"><a href="./login.html" class="navlink">Acceso Clientes</a></li>
             </ul>
             <div class="hamburger">
@@ -39,19 +39,28 @@
     <section class="Pedido" id="Pedido">
         <div class="Productos">
             <h3 class="comocomprar">¿Cómo comprar?</h3>
-            <p>1. Elegís la hamburguesa que más te gusta</p>
-            <p>2. Agregas los adicionales que quieras</p>
-            <p>3. Pagas y listo!</p>
+            <p>1. Elegís la hamburguesa que más te gusta agregandola al carrito</p>
+            <p>2. Pagas y listo!</p>
+            <label for="search">Podes buscar ingresando el nombre aqui:</label>
+            <form id="form">
+                <input type="text" name="search" id="search" placeholder="Ingresa el nombre de tu hambuguesa favorita">
+                <button type="submit" value="BUSCAR" id="buttonSearch">BUSCAR</button>
+            </form>
 
-            <button class="productButton" id="productButton"> <a href="./productos.html">VER PRODUCTOS</a> </button>
+            <label for="productButton">O haciendo click en:</label>
+            <button class="productButton" id="productButton"> <a href="./tienda.html">VER TODOS LOS PRODUCTOS</a> </button>
         </div>
+        <div id="containerSearch"></div>
 
     </section>
 
-    <section class="Contacto" id="Contacto">
-        <h4 class="escribinos">¡Escribinos!</h4>
+    <section class="Tuhamburguesa" id="Tuhamburguesa">
+        <h4 class="escribinos">UNA HAMBURGUESA CON TU NOMBRE</h4>
+        <P>¿Tenes una idea para una excelente hamburguesa? Te invitamos a completar el formulario. </P>
+        <p>Si sos el ganador del mes, la hamburguesa llevará tu nombre.</p>
+        <p>¡Y vos ganas combos gratis!</p>
         <div class="container-form">
-            <form action="method" class="formulario">
+            <form action="method" class="formulario" id="formtuhambur">
                 <div class="webform">
                     <label for="FormNombre">Nombre y Apellido:</label>
                     <input type="text" name="FormNombre" placeholder="Ingresa tu nombre y apellido" id="FormNombre" required>
@@ -65,13 +74,14 @@
                     <input type="email" name="FormEmail" placeholder="Ingresa tu correo" id="FormEmail" required>
                 </div>
                 <div class="webform">
-                    <label for="FormMensaje">Mensaje:</label>
-                    <input type="text" name="FormMensaje" placeholder="Ingresa tu mensaje" id="FormMensaje" required>
+                    <label for="FormMensaje">Ingredientes:</label>
+                    <input type="text" name="FormMensaje" placeholder="Ingresa los ingredientes ordenados" id="FormMensaje" required>
                 </div>
                 <div class="webform">
                     <input type="submit" value="ENVIAR" id="FormSubmit" required>
                 </div>
             </form>
+            <div id="cardtuhambur"></div>
         </div>
     </section>
 

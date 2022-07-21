@@ -90,7 +90,7 @@ class Cart {
         const productdb = database.products.find((p) => p.ID === ID);
 
         if (!product) {
-            return alert('EL producto que deseas eliminar no existe');
+            return alert('El producto que deseas eliminar no existe');
         }
         productdb.stock++;
         this.subtotal = this.subtotal - productdb.price;
@@ -162,7 +162,7 @@ const americanburger = new Product({
 
 const bigk = new Product({
     price: 630,
-    stock: 20,
+    stock: 25,
     name: 'bigk',
     ingredientes: ['Pan de Papa', 'Medallón de 110gr', 'Cheddar', 'Lechuga', 'Pepino', 'Aderezo especial'],
     image: src = './Imgs/5BigK.JPG',
@@ -170,7 +170,7 @@ const bigk = new Product({
 
 const veggie = new Product({
     price: 750,
-    stock: 18,
+    stock: 20,
     name: 'veggie',
     ingredientes: ['Pan de Papa', 'Medallón de espinaca, lentejas y quinoa', 'Triple Cheddar', 'Lechuga', 'Tomate', 'Aderezo secreto'],
     image: src = './Imgs/6Veggie.JPG',
