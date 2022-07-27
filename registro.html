@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="index.css">
+    <link src="../Iconos/fontawesome-free-5.15.4-web/css/all.css" rel="stylesheet" type='text/css' crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <div class="contenedorlogo">
+            <a href="./index.html"><img src="./Imgs/logok burgers.png" alt="Logo K burgers" class="navlogo"></a>
+        </div>
+        <nav class="navbar" id="navbar">
+            <ul class="listanav" id="listanav">
+                <li class="navitem"><a href="./index.html" class="navlink">Inicio</a></li>
+                <li class="navitem"><a href="./tienda.html" class="navlink">Pedido Online</a></li>
+                <li class="navitem"><a href="#Tuhamburguesa" class="navlink">Tu hamburguesa </a></li>
+                <li class="navitem"><a href="./login.html" class="navlink">Acceso Clientes</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+    <section class="registro">
+        <div class="conteiner-registro">
+            <h3 class="h3registro">Registrate</h3>
+            <form action="method" class="form-registro">
+                <label for="name">Nombre y apellido:</label>
+                <input type="name" name="name" id="name" placeholder="Nombre y apellido" required>
+                <label for="Nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" name="Nacimimiento" id="Nacimimiento" placeholder="Fecha de Nacionamiento" required>
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" name="email" id="email" placeholder="Correo Electrónico" required>
+                <label for="password">Contraseña:</label>
+                <input type="password" name="password" id="password" placeholder="Contraseña" required>
+                <input type="submit" value="ENVIAR" id="enviar" required>
+            </form>
+
+        </div>
+
+    </section>
+</body>
+
+</html>

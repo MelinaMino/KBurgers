@@ -1,6 +1,6 @@
 @font-face {
-    font-family: 'Oxygen';
-    src: url(./Fuentes/Oxygen-Regular.ttf);
+    font-family: 'Mukta';
+    src: url(../Fuentes/Mukta-Regular.ttf);
 }
 
 * {
@@ -11,7 +11,7 @@
 
 body {
     background-color: #040404;
-    font-family: "Oxygen";
+    font-family: 'Mukta';
     font-weight: 200;
     overflow-x: hidden;
 }
@@ -305,30 +305,6 @@ label {
     font-size: 1.3rem;
 }
 
-footer {
-    background-color: #f3f3f3;
-}
-
-.copy {
-    font-size: 0.8rem;
-    text-align: center;
-}
-
-.redes-soc {
-    font-size: 28px;
-    text-decoration: none;
-    padding: 2px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.icon-redes {
-    font-weight: bold;
-    font-size: 2rem;
-    margin: 8px;
-}
-
 
 /* Inicio de Sesion, es una pag aparte  */
 
@@ -426,11 +402,11 @@ footer {
     text-align: center;
     font-size: 2rem;
     color: #f3f3f3;
-    background-color: #386FA4;
+    background-color: rgba(255, 166, 0, 0.758);
 }
 
 .conteiner-registro {
-    background-color: #386FA4;
+    background-color: rgba(255, 166, 0, 0.758);
     height: 90%;
     width: 60%;
     border: 5px solid #040404;
@@ -636,7 +612,14 @@ footer {
 }
 
 footer {
-    position: bottom;
+    display: flex;
+    width: 100%;
+    background-color: #f3f3f3;
+}
+
+.copy {
+    font-size: 0.8rem;
+    text-align: center;
 }
 
 
